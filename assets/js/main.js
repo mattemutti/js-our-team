@@ -36,8 +36,16 @@ const team = [
 
 
 // 1 - stampare in console i dato dell'oggetto contenuti nell'array
-//- creare un ciclo for per ciclare all'interno dell'array e dentro a qiesto ciclo creiamo un ciclo forin per leggere tutti i dati degli oggetti
+//- creare un ciclo for per ciclare all'interno dell'array 
+// all'interno, richiamare la posizione che cicla e mandare a video il dato dell'oggetto in quella posizione dell'array.
 
+for (let i = 0; i < team.length; i++) {
+	const memberTeam = team[i];
+	// console.log(memberTeam);
+
+console.log(team[i].name, team[i].role, team[i].image);
+	
+}
 
 
 

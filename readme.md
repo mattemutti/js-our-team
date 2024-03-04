@@ -26,8 +26,8 @@ console.log() è nostro amico.
 # Pseudocode
 
 1 - stampare in console i dato dell'oggetto contenuti nell'array
-- creare un ciclo for per ciclare all'interno dell'array e dentro a qiesto ciclo creiamo un ciclo forin per leggere tutti i dati degli oggetti
-
+- creare un ciclo for per ciclare all'interno dell'array
+- all'interno, richiamare la posizione che cicla e mandare in concole il dato dell'oggetto in quella posizione dell'array.
 
 2 stampare le stesse info su dom sottoforma di stringhe
 
