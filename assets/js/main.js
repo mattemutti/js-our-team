@@ -33,10 +33,14 @@ const team = [
 	},
   ];
 
+  // Seleziono l'elemento row della dom
+  // - creare la variabile che seleziona la row dove aggiungeremo le card dei membri del team
+  const rowElement = document.querySelector('.row');
 
 
 // 1 - stampare in console i dato dell'oggetto contenuti nell'array
 //- creare un ciclo for per ciclare all'interno dell'array 
+// 2 stampare le stesse info su dom sottoforma di stringhe
 // all'interno, richiamare la posizione che cicla e mandare a video il dato dell'oggetto in quella posizione dell'array.
 
 for (let i = 0; i < team.length; i++) {
@@ -44,14 +48,29 @@ for (let i = 0; i < team.length; i++) {
 	// console.log(memberTeam);
 
 console.log(team[i].name, team[i].role, team[i].image);
+
 	
+// - creare un markUp che inserisce nel codice della dom la col e la card
+const markUp = `<div class="col"><div class= "card">${team[i].image} ${team[i].name} ${team[i].role}</div></div>`
+
+
+
+rowElement.insertAdjacentHTML('beforeend', markUp)
+
+
+
 }
 
 
 
-// 2 stampare le stesse info su dom sottoforma di stringhe
 
-// - creare una griglia in html, 
-// - creare delle variabili che selezionano la row dove aggiungeremo le card dei membri del team
+
+
+
+
+
+	
+
+
 // - aggiungiamo con addElement le varie card all'interno di "row" a l''internbo ci stampiamo con il template litteral i dati dell'array di oggetti.
 
