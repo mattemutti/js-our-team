@@ -48,21 +48,19 @@ for (let i = 0; i < team.length; i++) {
 	// console.log(memberTeam);
 	
 
-	console.log(team[i].name, team[i].role, team[i].image);
+	console.log(memberTeam.name, memberTeam.role, memberTeam.image);
 
 	// - creare un markUp che inserisce nel codice della dom la col e la card
-const markUp = `<div class="col-4"><div class= "card text-center"><img src="" alt=""> <h3>${team[i].name}</h3> <div>${team[i].role}</div></div></div>`;
+	const markUp = `<div class="col-4"><div class= "card text-center"><img src="" alt=""> <h3>${memberTeam.name}</h3> <div>${memberTeam.role}</div></div></div>`;
 
-// ineriamo in html la variabile markUp
-rowElement.insertAdjacentHTML('beforeend', markUp);
+	// ineriamo in html la variabile markUp
+	rowElement.insertAdjacentHTML('beforeend', markUp);
 
-// selezioniamo l'immagine in html
-let imgElement = document.querySelector('img');
-// aggiungo il link all'immagine html
-imgElement.src=`./assets/img/${team[i].image}`;
-// console.log(team[i].image);
-
-
+	// selezioniamo l'immagine in html
+	let imgElement = document.querySelector('img');
+	// aggiungo il link all'immagine html
+	imgElement.src=`./assets/img/${memberTeam.image}`;
+	// console.log(team[i].image);
 
 }
 
