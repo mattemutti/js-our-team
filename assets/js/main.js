@@ -51,7 +51,7 @@ for (let i = 0; i < team.length; i++) {
 	console.log(memberTeam.name, memberTeam.role, memberTeam.image);
 
 	// - creare un markUp che inserisce nel codice della dom la col e la card
-	const markUp = `<div class="col-4"><div class= "card text-center"><img src="./assets/img/${memberTeam.image}" alt=""> <h3>${memberTeam.name}</h3> <div>${memberTeam.role}</div></div></div>`;
+	const markUp = `<div class="col-4 p-4"><div class= "card text-center"><img src="./assets/img/${memberTeam.image}" alt=""> <h3>${memberTeam.name}</h3> <div>${memberTeam.role}</div></div></div>`;
 	
 	// ineriamo in html la variabile markUp
 	rowElement.insertAdjacentHTML('beforeend', markUp);
